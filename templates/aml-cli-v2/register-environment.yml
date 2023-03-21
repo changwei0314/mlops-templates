@@ -41,5 +41,5 @@ steps:
     inlineScript: |
       az ml environment create --name "${{parameters.environment_name}}" \
         --description "${{parameters.environment_description}}" \
-        --file "${{parameters.environment_path}}" \
+        --file "${{parameters.environment_file}}" \
         --build "${{parameters.build_type}}"
