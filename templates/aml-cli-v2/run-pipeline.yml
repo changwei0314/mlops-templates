@@ -13,7 +13,7 @@ parameters:
     default: 'false'
 
 jobs:
-- job: Test
+- job: RunPipeline
   timeoutInMinutes: 0 # how long to run the job before automatically cancelling, 0 represent utilize maximum capacity(6hr)
   cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
   steps:
