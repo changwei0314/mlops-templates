@@ -14,6 +14,7 @@ parameters:
 
 steps:
   - task: AzureCLI@2
+    timeoutInMinutes: 0
     displayName: Run Azure ML pipeline
     continueOnError: true
     inputs: 
