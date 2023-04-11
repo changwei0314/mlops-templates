@@ -53,7 +53,8 @@ jobs:
                                   --workspace-name ${{ inputs.workspace_name }}
       - name: create-compute-using-tier
         if: ${{ inputs.cluster_tier != ''}}
-        run: |
+        run: | 
+          az account set --subscription "6dab2613-b74b-46dd-98af-7b3be591da22"
           az ml compute create --name ${{ inputs.cluster_name }} \
                                   --type AmlCompute \
                                   --tier ${{ inputs.cluster_tier }} \
